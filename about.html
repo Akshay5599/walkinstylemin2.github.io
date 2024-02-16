@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        background-color: #d0bdf4
+        }
+        header {
+            background-color: #232c5b;;
+            color: #d6cece;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .about-content {
+            margin-top: 20px;
+            text-align: justify;
+            animation: fadeInUp 1s ease-out;
+        }
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            animation: fadeInRight 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            .about-content, .about-image {
+                margin: 20px 0;
+            }
+        }
+        footer{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+     <!-- Sidebar -->
+     <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="women.html">Women</a>
+        <a href="kid.html">Kids</a>
+    </div>
+
+    <!-- Page content -->
+    <div id="main">
+        <!-- Button to open the sidebar -->
+        <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">☰</span>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <div class="about-content">
+            <p>Welcome to our e-commerce store! We are passionate about providing high-quality products and excellent customer service to our valued customers.</p>
+            <p>Our journey began in [year], when [founder's name] founded the company with a vision to [briefly describe the mission or purpose of the company]. Since then, we have been dedicated to fulfilling this vision by offering a wide range of products and ensuring customer satisfaction.</p>
+            <p>At [company name], we believe in [core value 1], [core value 2], and [core value 3]. These values guide everything we do, from selecting products to interacting with our customers.</p>
+            <p>Whether you're looking for [type of products you sell], [another type of product], or [another type of product], we have something for everyone. Our team works tirelessly to curate the best selection of products and provide a seamless shopping experience.</p>
+            <p>Thank you for choosing [company name]. We appreciate your support and look forward to serving you!</p>
+        </div>
+        <img src="https://scontent.faip1-1.fna.fbcdn.net/v/t39.30808-6/287538658_111144698292370_7383695046573349715_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=RSgjrN8E_o0AX_6YtgY&_nc_ht=scontent.faip1-1.fna&oh=00_AfCqiSV3M872dz2ErmI1NAWSElU0a6XlucE30A7-Oy4n2w&oe=65D34B9C" alt="Company Image" class="about-image">
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <!-- <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li> -->
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <!-- <li class="fListItem">Stories</li> -->
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@WalkInStyle All rights reserved. 2024.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./app.js"></script>
+</html>
